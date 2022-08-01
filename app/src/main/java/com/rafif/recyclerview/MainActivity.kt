@@ -7,6 +7,7 @@ import com.rafif.recyclerview.databinding.ActivityFirstBinding
 import com.rafif.recyclerview.databinding.ActivityMainBinding
 import com.rafif.recyclerview.firstrecyclerview.FirstActivity
 import com.rafif.recyclerview.secondrecyclerview.MainActivity
+import com.rafif.recyclerview.thirdrecyclerview.ThirdActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.secondRecyclerView.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.thirdRecyclerView.setOnClickListener{
+            val intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
     }
